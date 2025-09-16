@@ -2,11 +2,9 @@
   {
     "context": "Workspace",
     "bindings": {
-      // toggle docks
       "alt-q": "workspace::ToggleLeftDock",
       "alt-e": "workspace::ToggleRightDock",
       "ctrl-`": "workspace::ToggleBottomDock",
-      // new terminal (correct command is terminal::New, not workspace::NewTerminal)
       "ctrl-shift-`": "workspace::NewTerminal"
     }
   },
@@ -17,6 +15,18 @@
       "alt-j": "vim::Down",
       "alt-k": "vim::Up",
       "alt-l": "vim::Right"
+    }
+  },
+
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "n": "project_panel::NewFile",
+      "shift+n": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "o": "project_panel::Open",
+      "t": "search::FocusSearch"
     }
   }
 ]
