@@ -6,7 +6,7 @@
   // Placeholders with the same value are linked.
   "Log to console": {
     "prefix": "clg",
-    "body": ["console.info(\"${1:World}!\")", "$0"],
+    "body": ["console.info(${1:})", "$0"],
     "description": "Logs to console"
   }
 }

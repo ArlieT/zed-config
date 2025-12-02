@@ -8,10 +8,17 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   //editor
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
   "agent": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet"
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
     }
   },
   "auto_update_extensions": {
@@ -21,7 +28,7 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "Ayu Light",
+    "light": "Gruvbox Light",
     "dark": "Ayu Dark"
   },
   "bottom_dock_layout": "full",
