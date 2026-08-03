@@ -1,8 +1,11 @@
 {
   "agent": {
+    "notify_when_agent_waiting": "all_screens",
+    "commit_message_instructions": "Use Conventional Commits (<type>(<scope>): <description>) with a blank line before the body. Subject in imperative mood, under 72 chars, no period. Describe what the staged change does, not just the code it references (a migration is 'add migration for X', not 'add X models').",
     "default_model": {
-      "model": "codestral-latest",
-      "provider": "mistral"
+      "enable_thinking": false,
+      "model": "mistral-medium-latest",
+      "provider": "mistral",
     },
     "default_profile": "ask",
     "play_sound_when_agent_done": "when_hidden"
@@ -82,11 +85,11 @@
     }
   },
   "toolbar": {
-    "breadcrumbs": false,
+    "breadcrumbs": true,
     "quick_actions": false
   },
-  "theme": "Everforest Dark Hard (material)",
-  "ui_font_family": ".ZedMono",
+  "theme": "Everforest Dark Hard (blur)",
+  "ui_font_family": "JetBrains Mono NL",
   "ui_font_size": 16,
   "vim_mode": true
 }
